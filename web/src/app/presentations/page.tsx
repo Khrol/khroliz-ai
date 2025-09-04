@@ -12,12 +12,23 @@ type Talk = {
   link?: string;
   youtubeUrl?: string;
   city: string;
-  citySlug?: "kyiv" | "lviv" | "odesa" | "minsk";
-  imageUrl?: string; // optional full URL for a coat image
-  language?: "ENG" | "RUS";
+  citySlug: "kyiv" | "lviv" | "minsk" | "penza" | "vilnius" | "vitebsk" | "lisbon" | "dnipro" | "st_petersburg" | "moscow" | "bangalore" | "riga" | "novosibirsk" | "online";
+  language: "ENG" | "RUS";
 };
 
 const presentationsByYear: Record<string, Talk[]> = {
+  "2024": [
+    {
+      title: "BigData with Open Source Solutions",
+      event: "Gurtam DevConf",
+      date: "2024-09-10",
+      link: "https://gurtam.com/news/highlights-from-gurtam-devconf",
+      youtubeUrl: "https://www.youtube.com/watch?v=EjWgWodaEIs",
+      city: "Vilnius, Lithuania",
+      citySlug: "vilnius",
+      language: "ENG",
+    }
+  ],
   "2023": [
     {
       title: "How to Test BigData/ETL Solutions?",
@@ -26,6 +37,7 @@ const presentationsByYear: Record<string, Talk[]> = {
       link: "https://events.pinetool.ai/3078/#sessions/100683",
       youtubeUrl: "https://www.youtube.com/watch?v=umw8X5umHyw",
       city: "Vilnius, Lithuania",
+      citySlug: "vilnius",
       language: "ENG",
     },
     {
@@ -35,6 +47,7 @@ const presentationsByYear: Record<string, Talk[]> = {
       link: "https://events.pinetool.ai/3079/#sessions/101328",
       youtubeUrl: "https://www.youtube.com/watch?v=Ex6CfJlWBgk",
       city: "Vilnius, Lithuania",
+      citySlug: "vilnius",
       language: "ENG",
     },
     {
@@ -43,6 +56,7 @@ const presentationsByYear: Record<string, Talk[]> = {
       date: "2023-01-01",
       link: "https://epichey.dev/igorkhrol",
       city: "Lisbon, Portugal",
+      citySlug: "lisbon",
       language: "ENG",
     }
   ],
@@ -53,6 +67,8 @@ const presentationsByYear: Record<string, Talk[]> = {
       date: "2021-01-01",
       link: "https://a4qworldcongress.com/events/%d1%82%d0%b5%d1%81%d1%82%d0%b8%d1%80%d0%be%d0%b2%d0%b0%d0%bd%d0%b8%d0%b5-%d0%b8%d1%81%d0%ba%d1%83%d1%81%d1%81%d1%82%d0%b2%d0%b5%d0%bd%d0%bd%d0%be%d0%b3%d0%be-%d0%b8%d0%bd%d1%82%d0%b5%d0%bb%d0%bb%d0%b5/",
       city: "Online",
+      citySlug: "online",
+      language: "RUS",
     }
   ],
   "2020": [
@@ -63,6 +79,8 @@ const presentationsByYear: Record<string, Talk[]> = {
       link: "https://delex-conf.com/bof/bof-sdet-yet-another-rattle-title-or-separate-engineering-line/",
       youtubeUrl: "https://www.youtube.com/watch?v=x-d6wK83iBo",
       city: "Minsk, Belarus",
+      citySlug: "minsk",
+      language: "RUS",
     },
     {
       title: "Big Data Testing",
@@ -71,6 +89,8 @@ const presentationsByYear: Record<string, Talk[]> = {
       link: "https://ritfest.ru/2020/abstracts/6896",
       youtubeUrl: "https://www.youtube.com/watch?v=AF8dufCHhRs",
       city: "Online",
+      citySlug: "online",
+      language: "RUS",
     }
   ],
   "2019": [
@@ -81,6 +101,8 @@ const presentationsByYear: Record<string, Talk[]> = {
       link: "https://community-z.com/events/dsc19#_=_",
       youtubeUrl: "https://www.youtube.com/watch?v=WRJ02C0W9wE",
       city: "Vitebsk, Belarus",
+      citySlug: "vitebsk",
+      language: "RUS",
     },
     {
       title: "Big Data Testing",
@@ -88,6 +110,8 @@ const presentationsByYear: Record<string, Talk[]> = {
       date: "2019-01-01",
       link: "http://qaasp.tech/igor-khrol",
       city: "Minsk, Belarus",
+      citySlug: "minsk",
+      language: "RUS",
     },
     {
       title: "Monads for Testers",
@@ -97,6 +121,7 @@ const presentationsByYear: Record<string, Talk[]> = {
       youtubeUrl: "https://www.youtube.com/watch?v=djJIi7RGqjk",
       city: "Kyiv, Ukraine",
       citySlug: "kyiv",
+      language: "RUS",
     },
     {
       title: "Monads for Testers",
@@ -104,6 +129,8 @@ const presentationsByYear: Record<string, Talk[]> = {
       date: "2019-01-01",
       link: "http://delex-conf.com/",
       city: "Minsk, Belarus",
+      citySlug: "minsk",
+      language: "RUS",
     }
   ],
   "2018": [
@@ -114,6 +141,8 @@ const presentationsByYear: Record<string, Talk[]> = {
       link: "https://item.com.ua/en#!/tproduct/67151017-1534030289949",
       youtubeUrl: "https://www.youtube.com/watch?v=WTXin9dQ6w4",
       city: "Dnipro, Ukraine",
+      citySlug: "dnipro",
+      language: "RUS",
     },
     {
       title: "How to test Artificial Intelligence and Machine Learning solutions?",
@@ -122,6 +151,8 @@ const presentationsByYear: Record<string, Talk[]> = {
       link: "http://qmoconference.com/Archive/2018_04/index.html",
       youtubeUrl: "https://www.youtube.com/watch?v=JUlpxTXdOY0",
       city: "Lviv, Ukraine",
+      citySlug: "lviv",
+      language: "RUS",
     },
     {
       title: "How to test Machine Learning solutions?",
@@ -130,7 +161,8 @@ const presentationsByYear: Record<string, Talk[]> = {
       link: "https://2018.secon.ru/reports/kak-testirovat-sistemy-mashinnogo-obucheniya",
       youtubeUrl: "https://www.youtube.com/watch?v=oDIATBzasG4",
       city: "Penza, Russia",
-      imageUrl: "/coats/penza.png",
+      citySlug: "penza",
+      language: "RUS",
     },
     {
       title: "How to test Artificial Intelligence and Machine Learning solutions?",
@@ -140,6 +172,7 @@ const presentationsByYear: Record<string, Talk[]> = {
       youtubeUrl: "https://www.youtube.com/watch?v=ztG3RD3ozxE",
       city: "Kyiv, Ukraine",
       citySlug: "kyiv",
+      language: "RUS",
     },
     {
       title: "How to test Artificial Intelligence and Machine Learning solutions?",
@@ -148,6 +181,8 @@ const presentationsByYear: Record<string, Talk[]> = {
       link: "http://delex-conf.com/",
       youtubeUrl: "https://www.youtube.com/watch?v=SNBrP8JQthk",
       city: "Minsk, Belarus",
+      citySlug: "minsk",
+      language: "RUS",
     }
   ],
   "2017": [
@@ -159,6 +194,7 @@ const presentationsByYear: Record<string, Talk[]> = {
       youtubeUrl: "https://www.youtube.com/watch?v=6I870Dq2YoA",
       city: "Lviv, Ukraine",
       language: "ENG",
+      citySlug: "lviv",
     },
     {
       title: "Who should write automated tests?",
@@ -168,6 +204,7 @@ const presentationsByYear: Record<string, Talk[]> = {
       youtubeUrl: "https://www.youtube.com/watch?v=HbEceyiHrmM",
       city: "Kyiv, Ukraine",
       citySlug: "kyiv",
+      language: "RUS",
     },
     {
       title: "Testing in Data World",
@@ -175,6 +212,8 @@ const presentationsByYear: Record<string, Talk[]> = {
       date: "2017-01-01",
       link: "https://comaqa.by/2017/05/25/testing-in-the-data-world/",
       city: "Lviv, Ukraine",
+      citySlug: "lviv",
+      language: "RUS",
     },
     {
       title: "Testing in Data World",
@@ -183,6 +222,8 @@ const presentationsByYear: Record<string, Talk[]> = {
       link: "http://2017.heisenbug-piter.ru/en/talks/4cxymnehiaaysuims0weau/",
       youtubeUrl: "https://www.youtube.com/watch?v=bny86gxbUcg",
       city: "Saint Petersburg, Russia",
+      citySlug: "st_petersburg",
+      language: "RUS",
     },
     {
       title: "Testing in Data World",
@@ -191,6 +232,8 @@ const presentationsByYear: Record<string, Talk[]> = {
       link: "https://comaqa.by/2017/05/25/testing-in-the-data-world/",
       youtubeUrl: "https://www.youtube.com/watch?v=nFpZQOrZQfw",
       city: "Minsk, Belarus",
+      citySlug: "minsk",
+      language: "RUS",
     }
   ],
   "2016": [
@@ -201,6 +244,8 @@ const presentationsByYear: Record<string, Talk[]> = {
       link: "http://2016.heisenbug-moscow.ru/en/talks/avtotesty-takie-zhe-no-luchshe/",
       youtubeUrl: "https://www.youtube.com/watch?v=JYY_52DTJqs",
       city: "Moscow, Russia",
+      citySlug: "moscow",
+      language: "RUS",
     },
     {
       title: "Test Automation: Do the Same but Better",
@@ -209,6 +254,8 @@ const presentationsByYear: Record<string, Talk[]> = {
       link: "https://comaqa.by/2016/11/20/comaqa-autumn-2016-igor-khrol/",
       youtubeUrl: "https://www.youtube.com/watch?v=NioKI_ymVJA",
       city: "Minsk, Belarus",
+      citySlug: "minsk",
+      language: "RUS",
     },
     {
       title: "Test Automation: Do the Same but Better",
@@ -216,6 +263,7 @@ const presentationsByYear: Record<string, Talk[]> = {
       date: "2016-01-01",
       link: "https://www.testcon.lt/2016/",
       city: "Vilnius, Lithuania",
+      citySlug: "vilnius",
       language: "ENG",
     },
     {
@@ -223,6 +271,8 @@ const presentationsByYear: Record<string, Talk[]> = {
       event: "IT Spring",
       date: "2016-01-01",
       city: "Minsk, Belarus",
+      citySlug: "minsk",
+      language: "RUS",
     },
     {
       title: "Good tests change your application",
@@ -232,6 +282,7 @@ const presentationsByYear: Record<string, Talk[]> = {
       youtubeUrl: "https://www.youtube.com/watch?v=joi_vmNLYtk",
       city: "Kyiv, Ukraine",
       citySlug: "kyiv",
+      language: "RUS",
     },
     {
       title: "How to do tests quick and improve development efficiency",
@@ -239,6 +290,8 @@ const presentationsByYear: Record<string, Talk[]> = {
       date: "2016-01-01",
       link: "http://agile.by/2016/01/11/agile-by-gathering-23-yanvarya",
       city: "Minsk, Belarus",
+      citySlug: "minsk",
+      language: "RUS",
     }
   ],
   "2015": [
@@ -250,6 +303,7 @@ const presentationsByYear: Record<string, Talk[]> = {
       youtubeUrl: "https://www.youtube.com/watch?v=s4uSeWUDz_w",
       city: "Kyiv, Ukraine",
       citySlug: "kyiv",
+      language: "RUS",
     },
     {
       title: "Test Automation: throw away redundant and test the point",
@@ -259,6 +313,7 @@ const presentationsByYear: Record<string, Talk[]> = {
       youtubeUrl: "https://www.youtube.com/watch?v=ZC_GH4AANqc",
       city: "Kyiv, Ukraine",
       citySlug: "kyiv",
+      language: "RUS",
     },
     {
       title: "Test Automation: throw away excess and check the point",
@@ -267,6 +322,8 @@ const presentationsByYear: Record<string, Talk[]> = {
       link: "https://comaqa.by/2015/09/16/conf2-extra/",
       youtubeUrl: "https://www.youtube.com/watch?v=w1hjnphkACA",
       city: "Minsk, Belarus",
+      citySlug: "minsk",
+      language: "RUS",
     },
     {
       title: "Test Automation: Available for Everyone or The Destiny of The Elite?",
@@ -274,6 +331,8 @@ const presentationsByYear: Record<string, Talk[]> = {
       date: "2015-01-01",
       link: "https://sqadays.com/en/talk/33559",
       city: "Minsk, Belarus",
+      citySlug: "minsk",
+      language: "RUS",
     },
     {
       title: "Grail: steps for your Python-tests",
@@ -282,6 +341,8 @@ const presentationsByYear: Record<string, Talk[]> = {
       link: "https://habr.com/company/wargaming/blog/259619/",
       youtubeUrl: "https://www.youtube.com/watch?v=KVlUfJIOc5E",
       city: "Minsk, Belarus",
+      citySlug: "minsk",
+      language: "RUS",
     },
     {
       title: "Grail: steps for your Python-tests",
@@ -290,6 +351,8 @@ const presentationsByYear: Record<string, Talk[]> = {
       link: "https://2015.codefest.ru/lecture/989",
       youtubeUrl: "https://www.youtube.com/watch?v=T5nz0Gwr1b8",
       city: "Novosibirsk, Russia",
+      citySlug: "novosibirsk",
+      language: "RUS",
     },
     {
       title: "Webium: Page Objects in Python",
@@ -299,6 +362,7 @@ const presentationsByYear: Record<string, Talk[]> = {
       youtubeUrl: "https://www.youtube.com/watch?v=XrL1BLgkKyA",
       city: "Kyiv, Ukraine",
       citySlug: "kyiv",
+      language: "RUS",
     }
   ],
   "2014": [
@@ -307,6 +371,8 @@ const presentationsByYear: Record<string, Talk[]> = {
       event: "SEF.BY to Students",
       date: "2014-01-01",
       city: "Minsk, Belarus",
+      citySlug: "minsk",
+      language: "RUS",
     },
     {
       title: "Increase Selenium tests stability via JavaScript",
@@ -315,6 +381,7 @@ const presentationsByYear: Record<string, Talk[]> = {
       link: "https://confengine.com/selenium-conf-2014/proposal/335/increase-selenium-tests-stability-via-javascript",
       youtubeUrl: "https://www.youtube.com/watch?v=GvRA9VAA9rw",
       city: "Bangalore, India",
+      citySlug: "bangalore",
       language: "ENG",
     },
     {
@@ -322,6 +389,8 @@ const presentationsByYear: Record<string, Talk[]> = {
       event: "SEF.BY to Students",
       date: "2014-01-01",
       city: "Minsk, Belarus",
+      citySlug: "minsk",
+      language: "RUS",
     },
     {
       title: "Test Automation: throw away excess and check the point",
@@ -329,6 +398,8 @@ const presentationsByYear: Record<string, Talk[]> = {
       date: "2014-01-01",
       link: "https://sqadays.com/en/talk/19552",
       city: "Moscow, Russia",
+      citySlug: "moscow",
+      language: "RUS",
     },
     {
       title: "Increase Selenium tests stability via JavaScript",
@@ -337,6 +408,7 @@ const presentationsByYear: Record<string, Talk[]> = {
       link: "https://seleniumcamp.com/archive/selenium-camp-2014/materials/js-with-selenium/",
       city: "Kyiv, Ukraine",
       citySlug: "kyiv",
+      language: "RUS",
     }
   ],
   "2013": [
@@ -347,6 +419,8 @@ const presentationsByYear: Record<string, Talk[]> = {
       link: "http://confetqa.ru/program-selen/#khrol",
       youtubeUrl: "https://www.youtube.com/watch?v=moclYbCXMPM",
       city: "Online",
+      citySlug: "online",
+      language: "RUS",
     },
     {
       title: "Why test automation projects are failing?",
@@ -354,6 +428,7 @@ const presentationsByYear: Record<string, Talk[]> = {
       date: "2013-01-01",
       link: "http://www.tapost.org/tapost-2013/",
       city: "Riga, Latvia",
+      citySlug: "riga",
       language: "ENG",
     },
     {
@@ -363,6 +438,8 @@ const presentationsByYear: Record<string, Talk[]> = {
       link: "http://confetqa.ru/auto-confetqa-vesna-2013/#khrol",
       youtubeUrl: "https://www.youtube.com/watch?v=ZentmPn0_pg",
       city: "Online",
+      citySlug: "online",
+      language: "RUS",
     },
     {
       title: "WebDriver: Usual Mistakes of Beginners",
@@ -372,6 +449,7 @@ const presentationsByYear: Record<string, Talk[]> = {
       youtubeUrl: "https://www.youtube.com/watch?v=LtTmki_75vg",
       city: "Kyiv, Ukraine",
       citySlug: "kyiv",
+      language: "RUS",
     }
   ],
   "2012": [
@@ -382,6 +460,8 @@ const presentationsByYear: Record<string, Talk[]> = {
       link: "https://sqadays.com/ru/talk/7627",
       youtubeUrl: "https://www.youtube.com/watch?v=SgGH9V4LB5s",
       city: "Minsk, Belarus",
+      citySlug: "minsk",
+      language: "RUS",
     },
     {
       title: "Sikuli – tool to automate GUI applications",
@@ -390,6 +470,8 @@ const presentationsByYear: Record<string, Talk[]> = {
       link: "http://confetqa.ru/auto-confetqa-vesna-2012/#hrol",
       youtubeUrl: "https://www.youtube.com/watch?v=LD6ZRKdlRHA",
       city: "Online",
+      citySlug: "online",
+      language: "RUS",
     },
     {
       title: "WebDriver: One Migration History",
@@ -399,6 +481,7 @@ const presentationsByYear: Record<string, Talk[]> = {
       youtubeUrl: "https://www.youtube.com/watch?v=8ttVa0NxPvA",
       city: "Kyiv, Ukraine",
       citySlug: "kyiv",
+      language: "RUS",
     }
   ],
   "2011": [
@@ -410,7 +493,6 @@ const presentationsByYear: Record<string, Talk[]> = {
       youtubeUrl: "https://www.youtube.com/watch?v=Owtsn117cO4",
       city: "Kiev, Ukraine",
       citySlug: "kyiv",
-      imageUrl: "/coats/kyiv.png",
       language: "RUS",
     },
   ],
@@ -422,7 +504,6 @@ const presentationsByYear: Record<string, Talk[]> = {
       link: "https://www.slideshare.net/slideshow/embed_code/key/idMr6jRfkgk2vK",
       city: "Minsk, Belarus",
       citySlug: "minsk",
-      imageUrl: "/coats/minsk.png",
       language: "RUS",
     },
   ],
@@ -444,15 +525,13 @@ export default function PresentationsPage() {
           <ul style={{ listStyle: "none", padding: 0, margin: 0 }}>
             {presentationsByYear[year].map((talk, idx) => (
               <li key={`${year}-${idx}`} style={{ padding: "12px 0", borderTop: "1px solid #eee", display: "flex", gap: 12, alignItems: "center" }}>
-                {(talk.imageUrl || talk.citySlug) ? (
-                  <Image
-                    src={talk.imageUrl ?? `/coats/${talk.citySlug}.svg`}
-                    alt={`${talk.city} coat of arms`}
-                    width={28}
-                    height={28}
-                    style={{ display: "block", flexShrink: 0 }}
-                  />
-                ) : null}
+                <Image
+                  src={`/coats/${talk.citySlug}.png`}
+                  alt={`${talk.city} coat of arms`}
+                  width={28}
+                  height={28}
+                  style={{ display: "block", flexShrink: 0 }}
+                />
                 <div style={{ flex: 1 }}>
                   <div style={{ fontSize: 18, fontWeight: 600 }}>
                   {talk.link ? (
