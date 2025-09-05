@@ -123,7 +123,7 @@ export default function Home() {
           padding: "1px 3px", 
           borderRadius: "2px",
           fontWeight: "500"
-        }}>JavaScript</span> and can easily write code in these languages as well. I&apos;m actively participating in regional IT conferences as a speaker, and you can explore my presentations in the <a href="/presentations">presentations section</a>.
+        }}>JavaScript</span> and can easily write code in these languages as well. I&apos;m actively participating in regional IT conferences as a speaker, and you can explore my presentations in the <a href="/presentations" style={{ color: "#ededed", textDecoration: "underline" }}>presentations section</a>.
       </p>
       
       

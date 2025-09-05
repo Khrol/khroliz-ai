@@ -40,3 +40,18 @@ body {
   left: 0;
   font-size: 16px;
 }
+
+/* Global link styles */
+a {
+  color: #ededed;
+  text-decoration: underline;
+}
+
+a:hover {
+  color: #ffffff;
+  text-decoration: underline;
+}
+
+a:visited {
+  color: #ededed;
+}

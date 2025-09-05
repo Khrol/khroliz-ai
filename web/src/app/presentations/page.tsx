@@ -535,7 +535,7 @@ export default function PresentationsPage() {
                 <div style={{ flex: 1 }}>
                   <div style={{ fontSize: 18, fontWeight: 600 }}>
                   {talk.link ? (
-                    <a href={talk.link} target="_blank" rel="noreferrer" style={{ textDecoration: "underline", color: "#06c" }}>
+                    <a href={talk.link} target="_blank" rel="noreferrer">
                       {talk.title}
                     </a>
                   ) : (
@@ -553,7 +553,7 @@ export default function PresentationsPage() {
                     {talk.youtubeUrl ? (
                       <>
                         {" "}•{" "}
-                        <a href={talk.youtubeUrl} target="_blank" rel="noreferrer" style={{ textDecoration: "underline", color: "#06c" }}>YouTube</a>
+                        <a href={talk.youtubeUrl} target="_blank" rel="noreferrer">YouTube</a>
                       </>
                     ) : null}
                   </div>
