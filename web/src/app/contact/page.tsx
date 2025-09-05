@@ -9,13 +9,13 @@ export default function ContactPage() {
       <h1 style={{ fontSize: 32, fontWeight: 700, marginBottom: 12 }}>Contact</h1>
       <ul style={{ listStyle: "none", padding: 0, margin: 0, display: "grid", gap: 12 }}>
         <li style={{ display: "flex", alignItems: "center", gap: 10 }}>
-          <svg width="20" height="20" viewBox="0 0 24 24" fill="#0a66c2" aria-hidden>
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="#fff" aria-hidden>
             <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.038-1.852-3.038-1.853 0-2.136 1.447-2.136 2.941v5.666H9.352V9h3.414v1.561h.048c.476-.9 1.637-1.852 3.368-1.852 3.603 0 4.268 2.372 4.268 5.457v6.286zM5.337 7.433a2.064 2.064 0 1 1 0-4.128 2.064 2.064 0 0 1 0 4.128zM6.93 20.452H3.74V9h3.19v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.226.792 24 1.771 24h20.451C23.2 24 24 23.226 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
           </svg>
           <a href="http://www.linkedin.com/in/khroliz" target="_blank" rel="noreferrer">linkedin.com/in/khroliz</a>
         </li>
         <li style={{ display: "flex", alignItems: "center", gap: 10 }}>
-          <svg width="20" height="20" viewBox="0 0 24 24" fill="#c5221f" aria-hidden>
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="#fff" aria-hidden>
             <path d="M12 13.065 1.5 6h21L12 13.065z"/><path d="M12 15.935 1.5 9V18a1.5 1.5 0 0 0 1.5 1.5h18a1.5 1.5 0 0 0 1.5-1.5V9L12 15.935z"/>
           </svg>
           <a href="mailto:khroliz@gmail.com">khroliz@gmail.com</a>
