@@ -21,9 +21,11 @@ export default function CareerPage() {
             </h3>
             <span style={{ color: "#999", fontSize: 14 }}>Automattic | Jan 2019 - now</span>
           </div>
-          <ul style={{ lineHeight: 1.6, color: "#999", paddingLeft: 20 }}>
-            <li>Team Lead and Data Engineer in the Data department dealing with infrastructure, frameworks, and QA approaches</li>
-            <li>Implemented a self-service transformation framework allowing anyone to make data transformations based on SQL language</li>
+          <p style={{ lineHeight: 1.3, color: "#999", marginBottom: 8 }}>
+            Team Lead and Data Engineer in the Data department dealing with infrastructure, frameworks, and QA approaches.
+          </p>
+          <ul className="custom-bullets">
+            <li>Implemented a self-service transformation framework allowing anyone to make data transformations based on SQL language.</li>
             <li>Introduced the best development practices into the daily routine of the Data department: CI/CD, quality gates, and static code analysis</li>
             <li>Manage and improve Cloudera-based Hadoop clusters</li>
             <li>Cluster migration to Docker-based on-premises solution</li>
@@ -44,7 +46,7 @@ export default function CareerPage() {
             </h3>
             <span style={{ color: "#999", fontSize: 14 }}>Toptal | Apr 2015 - Mar 2018</span>
           </div>
-          <ul style={{ lineHeight: 1.6, color: "#999", paddingLeft: 20 }}>
+          <ul className="custom-bullets">
             <li>Responsible for data-related topics (ETL, ML) in the Analytics department</li>
             <li>Embedded quality as an integral part of the development process</li>
             <li>Tuned CI/CD pipeline to provide shorter feedback loop</li>
@@ -67,7 +69,7 @@ export default function CareerPage() {
             </h3>
             <span style={{ color: "#999", fontSize: 14 }}>Wargaming | Dec 2013 - May 2015</span>
           </div>
-          <ul style={{ lineHeight: 1.6, color: "#999", paddingLeft: 20 }}>
+          <ul className="custom-bullets">
             <li>Built automated testing in the Web department - technology, process, people, and infrastructure</li>
             <li>Built a community around test automation expertise to share knowledge between projects, departments, and regional offices</li>
             <li>Implemented radical shift-left in test strategy</li>
@@ -89,7 +91,7 @@ export default function CareerPage() {
             </h3>
             <span style={{ color: "#999", fontSize: 14 }}>Tele2 | Feb 2012 - Nov 2013</span>
           </div>
-          <ul style={{ lineHeight: 1.6, color: "#999", paddingLeft: 20 }}>
+          <ul className="custom-bullets">
             <li>Helping with automated testing development: framework creation and enhancements, process improvements, and training</li>
             <li>Performance testing</li>
           </ul>
@@ -108,7 +110,7 @@ export default function CareerPage() {
             </h3>
             <span style={{ color: "#999", fontSize: 14 }}>EPAM Systems | Mar 2012 - Jul 2013</span>
           </div>
-          <ul style={{ lineHeight: 1.6, color: "#999", paddingLeft: 20 }}>
+          <ul className="custom-bullets">
             <li>Providing training on Selenium/WebDriver</li>
             <li>Consulting on automated testing related issues</li>
           </ul>
@@ -121,7 +123,7 @@ export default function CareerPage() {
             </h3>
             <span style={{ color: "#999", fontSize: 14 }}>EPAM Systems | Jul 2009 - Feb 2012</span>
           </div>
-          <ul style={{ lineHeight: 1.6, color: "#999", paddingLeft: 20 }}>
+          <ul className="custom-bullets">
             <li>Managed a team of 20 people to support UI automation of the Oracle ATG eCommerce product</li>
             <li>Implemented an open-source-based solution to test Flex applications</li>
           </ul>
@@ -140,7 +142,7 @@ export default function CareerPage() {
             </h3>
             <span style={{ color: "#999", fontSize: 14 }}>A1QA | Apr 2006 - Jul 2009</span>
           </div>
-          <ul style={{ lineHeight: 1.6, color: "#999", paddingLeft: 20 }}>
+          <ul className="custom-bullets">
             <li>Black box testing</li>
             <li>Test script development (automated and performance testing)</li>
             <li>Led multiple automated and performance testing projects</li>
