@@ -6,5 +6,3 @@
 - **Deploy to Firebase**: `cd web && npm run deploy`
 
 Prereqs: Node 18+, `npx` available. Deploy requires a Firebase project (set in `.firebaserc`). Login once with `npx firebase-tools login`.
-
-
