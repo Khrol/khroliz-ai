@@ -11,12 +11,26 @@ type Talk = {
   date: string; // YYYY-MM-DD
   link?: string;
   youtubeUrl?: string;
+  slidesUrl?: string;
   city: string;
-  citySlug: "kyiv" | "lviv" | "minsk" | "penza" | "vilnius" | "vitebsk" | "lisbon" | "dnipro" | "st_petersburg" | "moscow" | "bangalore" | "riga" | "novosibirsk" | "online";
+  citySlug: "bangalore" | "dnipro" | "kyiv" | "lisbon" | "lviv" | "minsk" | "moscow" | "novosibirsk" | "online" | "penza" | "riga" | "st_petersburg" | "vilnius" | "vitebsk" | "warsaw";
   language: "ENG" | "RUS";
 };
 
 const presentationsByYear: Record<string, Talk[]> = {
+  "2025": [
+    {
+      title: "How to build Data Warehouse without SaaS and Clouds in 2025?",
+      event: "Data Science Summit 2025",
+      date: "2025-11-21",
+      link: "https://main.dssconf.pl/",
+      youtubeUrl: "https://www.youtube.com/watch?v=SpCN78eo0PU",
+      slidesUrl: "https://docs.google.com/presentation/d/1A86NyZE-NkUCfDJF9V3NHESUKrCJ1BJZO9qkVxKsAww/edit?usp=sharing",
+      city: "Warsaw, Poland",
+      citySlug: "warsaw",
+      language: "ENG",
+    }
+  ],
   "2024": [
     {
       title: "BigData with Open Source Solutions",
@@ -558,6 +572,12 @@ export default function PresentationsPage() {
                       <>
                         {" "}•{" "}
                         <a href={talk.youtubeUrl} target="_blank" rel="noreferrer">YouTube</a>
+                      </>
+                    ) : null}
+                    {talk.slidesUrl ? (
+                      <>
+                        {" "}•{" "}
+                        <a href={talk.slidesUrl} target="_blank" rel="noreferrer">Slides</a>
                       </>
                     ) : null}
                   </div>
