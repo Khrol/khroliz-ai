@@ -13,9 +13,77 @@ const geistMono = Geist_Mono({
   subsets: ["latin"],
 });
 
+const siteDescription =
+  "Igor Khrol, Head of Data Engineering at Automattic. 20 years in engineering leadership: self-hosted data platforms (Trino, Spark, Airflow, Kafka, Apache Iceberg) and AI enablement (MCP servers, LLM agents, data governance).";
+
 export const metadata: Metadata = {
-  title: "Igor Khrol",
-  description: "Personal site of Igor Khrol",
+  metadataBase: new URL("https://khroliz.com"),
+  title: {
+    default: "Igor Khrol — Head of Data Engineering",
+    template: "%s | Igor Khrol",
+  },
+  description: siteDescription,
+  openGraph: {
+    type: "profile",
+    url: "https://khroliz.com",
+    title: "Igor Khrol — Head of Data Engineering",
+    description: siteDescription,
+    images: ["/avatar.jpg"],
+  },
+  twitter: {
+    card: "summary",
+    title: "Igor Khrol — Head of Data Engineering",
+    description: siteDescription,
+  },
+};
+
+const personSchema = {
+  "@context": "https://schema.org",
+  "@type": "Person",
+  name: "Igor Khrol",
+  jobTitle: "Head of Data Engineering",
+  worksFor: {
+    "@type": "Organization",
+    name: "Automattic",
+    url: "https://automattic.com",
+  },
+  alumniOf: {
+    "@type": "CollegeOrUniversity",
+    name: "Belarusian State University",
+  },
+  address: {
+    "@type": "PostalAddress",
+    addressLocality: "Vilnius",
+    addressCountry: "LT",
+  },
+  email: "mailto:khroliz@gmail.com",
+  url: "https://khroliz.com",
+  image: "https://khroliz.com/avatar.jpg",
+  award: [
+    "Silver Medal, International Mathematical Olympiad (2003)",
+    "Silver Medal, International Mathematical Olympiad (2004)",
+  ],
+  sameAs: [
+    "https://www.linkedin.com/in/khroliz",
+    "https://github.com/Khrol",
+    "https://www.slideshare.net/khroliz",
+  ],
+  knowsAbout: [
+    "Data Engineering",
+    "Data Platform Architecture",
+    "Trino",
+    "Apache Spark",
+    "Apache Airflow",
+    "Apache Kafka",
+    "Apache Iceberg",
+    "AI Enablement",
+    "LLM Agents",
+    "Model Context Protocol (MCP)",
+    "Data Governance",
+    "Team Leadership",
+    "Scala",
+    "Python",
+  ],
 };
 
 export default function RootLayout({
@@ -28,6 +96,10 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(personSchema) }}
+        />
         <header style={{
           maxWidth: 900,
           margin: "0 auto",

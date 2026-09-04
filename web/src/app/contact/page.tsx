@@ -1,6 +1,6 @@
 export const metadata = {
-  title: "Contact | Igor Khrol",
-  description: "Contact Igor Khrol",
+  title: "Contact",
+  description: "Contact Igor Khrol, Head of Data Engineering at Automattic — LinkedIn, GitHub, email.",
 };
 
 export default function ContactPage() {

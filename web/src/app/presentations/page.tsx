@@ -1,6 +1,6 @@
 export const metadata = {
-  title: "My Public Presentations | Igor Khrol",
-  description: "Talks and presentations grouped by year",
+  title: "Presentations",
+  description: "50+ conference talks by Igor Khrol (Head of Data Engineering, Automattic): data platforms, big-data testing, ML/AI quality, and test automation — 2010–2025.",
 };
 
 import Image from "next/image";

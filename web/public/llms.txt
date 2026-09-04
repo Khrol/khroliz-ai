@@ -1,0 +1,89 @@
+# Igor Khrol — Head of Data Engineering
+
+> Head of Data Engineering at Automattic (WordPress.com, Tumblr, WooCommerce).
+> 20 years in engineering: quality engineering leadership → data platforms → AI enablement.
+> Two-time IMO silver medalist (International Mathematical Olympiad, 2003 & 2004).
+> Vilnius, Lithuania · khroliz@gmail.com · https://www.linkedin.com/in/khroliz · https://github.com/Khrol
+
+## Experience
+
+### Head of Data Engineering — Automattic (2022-03 – present)
+
+Leading Automattic's data engineering team — the engineers behind the central
+self-hosted data platform powering analytics and AI across WordPress.com,
+Tumblr, and WooCommerce.
+
+- Lead a team of 5–7 data-platform engineers owning the company's central self-hosted data platform (Spark, Trino, Airflow, Kafka, Apache Iceberg, Superset, Looker, JupyterHub) — roadmap, planning, reviews, and production operations.
+- Set the team's AI-enablement strategy and led its delivery across the team: a program of MCP servers (Trino, Superset, Looker, data catalog) giving LLM agents governed access to company data; defined the next phase — AI evaluation, observability, and domain-scoped data assistants.
+- Designed data-access governance for AI agents: least-privilege, tag-based, read-only warehouse access enforced with policy-as-code (Open Policy Agent).
+- Put LLM evaluation into CI: an LLM-as-judge harness verifying documentation produces correct AI-agent behavior ("TDD for docs").
+- Coordinated the team's migration of the warehouse to Apache Iceberg — the platform's move to an open lakehouse table format — while personally contributing 50+ merged improvements on Iceberg reliability, snapshot retention, and storage optimization.
+- Drove a data-contract integrity program on Apache Iceberg: automated contract-violation checks, fixes to billion-row production tables, and major storage and compute cost optimizations.
+- Represent the data platform across the company: AI data-tooling and access-policy decisions, security collaboration (member of the security incident response team), and the editorial group of Automattic's public data blog.
+- Still hands-on: one of the platform's top contributors with 2,000+ merged changes; led every major Airflow production upgrade, through Airflow 3.
+
+Technologies: Trino, Spark, Airflow, Kafka, Apache Iceberg, Scala, Python, Superset, Looker, JupyterHub, Open Policy Agent, MCP
+
+### Senior Data Engineer — Automattic (2019-02 – 2022-03)
+
+- Core engineer of the data platform from its early days: introduced Airflow to the company in 2019 and later drove the Airflow 2.0 migration.
+- Designed a self-service SQL transformation framework that removed a 5-engineer bottleneck: 50+ people across the company now contribute 700+ production data transformations (https://data.blog/2021/02/22/sql-a-common-language-for-the-whole-data-team/).
+- Implemented data retention and deletion at the core product-analytics event store (GDPR-driven).
+- Migrated the platform from Cloudera Hadoop to a Docker-based on-premises stack; established CI/CD, quality gates, and static code analysis in the data org.
+
+### Team/Tech Lead in Analytics — Toptal (2015-04 – 2018-03)
+
+- Led data engineering and ML topics in the Analytics department — ETL platform, data warehouse, and production ML services.
+- Shipped ML microservices to production on Google App Engine (Python, scikit-learn).
+- Migrated analytics infrastructure to Google Cloud (BigQuery, GAE, GCE), cutting infrastructure and maintenance costs.
+- Embedded quality into the development process and shortened CI/CD feedback loops.
+
+Technologies: Scala, Spark, Python, Pandas, Luigi, scikit-learn, Google Cloud, Ruby on Rails, Postgres
+
+### Test Automation Lead — Wargaming (2013-12 – 2015-05)
+
+- Built the Web department's test-automation capability from scratch — technology, process, hiring, and infrastructure — at a gaming company with 100M+ registered players.
+- Ran a company-wide test-automation community connecting projects, departments, and regional offices.
+- Drove a shift-left test strategy, moving the bulk of automation from UI to API and unit tests.
+- Authored open-source testing libraries webium (https://github.com/wgnet/webium) and grail (https://github.com/wgnet/grail), published on PyPI under the Wargaming GitHub org.
+
+### Automated Testing Consultant — Tele2 (2012-02 – 2013-11)
+
+- Consulted on test-automation development: framework creation and enhancements, process improvements, and training; performance testing.
+
+### Trainer and Consultant — EPAM Systems (2012-03 – 2013-07)
+
+- Delivered Selenium/WebDriver training and consulted delivery teams on test automation.
+
+### Software Testing Team Lead — EPAM Systems (2009-07 – 2012-02)
+
+- Managed a team of 20 engineers supporting UI automation for the Oracle ATG eCommerce product.
+- Implemented an open-source-based solution for testing Flex applications.
+
+### QA Specialist — A1QA (2006-04 – 2009-07)
+
+- Led multiple automated and performance-testing projects; automated and performance test scripting.
+
+## Open Source & Writing
+
+- Apache Airflow — Contributor — 13 merged upstream PRs 2019–2023 (HDFS task-log handler, Grid/Graph UI improvements, SQLAlchemy connection resilience, Spark and Slack provider enhancements): https://github.com/apache/airflow/pulls?q=is%3Apr+author%3AKhrol+is%3Amerged
+- webium — Author — https://github.com/wgnet/webium — Page Object library for Python/Selenium, on PyPI.
+- grail — Author — https://github.com/wgnet/grail — Lightweight step-based test library for Python.
+- Apache Superset — Contributor — 9 merged upstream PRs 2023–2026 (SQL Lab robustness and Trino integration fixes, Spark SQLAlchemy dialect registration, LDAP authentication fix): https://github.com/apache/superset/pulls?q=is%3Apr+author%3AKhrol+is%3Amerged
+- "SQL — a Common Language for the Whole Data Team" — https://data.blog/2021/02/22/sql-a-common-language-for-the-whole-data-team/
+- "Synchronizing Data with Apache Superset" — https://data.blog/2023/11/06/synchronizing-data-with-apache-superset-our-internal-solution/
+
+## Awards
+
+- International Mathematical Olympiad — Silver Medal, 2003 and 2004 (representing Belarus): https://www.imo-official.org/results/contestant/7433/
+
+## Education
+
+- Master in Computer Science — Belarusian State University, Faculty of Applied Mathematics and Informatics (2004–2010)
+
+## Pages
+
+- https://khroliz.com/ — profile
+- https://khroliz.com/career — full career history
+- https://khroliz.com/presentations — 50+ conference talks (2010–2025)
+- https://khroliz.com/contact — contact links
